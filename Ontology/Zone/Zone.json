@@ -1,0 +1,30 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Zone;1",
+  "@type": "Interface",
+  "displayName": "Zone",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Category",
+      "displayName": "Category",
+      "writable": true,
+      "schema": "string",
+      "description": "Uniformat Categorization"
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "displayName": "Description",
+      "writable": true,
+      "schema": "string"
+    }
+  ]
+}

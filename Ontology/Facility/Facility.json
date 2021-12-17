@@ -1,0 +1,87 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Facility;1",
+  "@type": "Interface",
+  "displayName": "Facility",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "name",
+      "schema": "string",
+      "writable": true,
+      "displayName": {
+        "en": "Name"
+      }
+    },
+    {
+      "@type": "Component",
+      "displayName": {
+        "en": "address"
+      },
+      "name": "address",
+      "schema": "dtmi:syyclops:Address;1"
+    },
+    {
+      "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:FacilityCoordinates;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "areaMeasurement",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Area Measurement"
+    },
+    {
+      "@type": "Property",
+      "name": "elevation",
+      "displayName": {
+        "en": "Elevation (Sea Level)"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "constructionStartDate",
+      "displayName": {
+        "en": "Construction Start Date"
+      },
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "constructionCompletionDate",
+      "displayName": {
+        "en": "Construction Completion Date"
+      },
+      "writable": true,
+      "schema": "date"
+    }
+  ]
+}

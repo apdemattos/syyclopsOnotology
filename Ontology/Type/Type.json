@@ -1,0 +1,106 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Type;1",
+  "@type": "Interface",
+  "displayName": "Type",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Category",
+      "displayName": "Category",
+      "writable": true,
+      "schema": "string",
+      "description": "Uniformat Categorization"
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "displayName": "Description",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "AssetType",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Manufacturer",
+      "displayName": "Manufacturer",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ModelNumber",
+      "displayName": "Model Number",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyGuarantorParts",
+      "displayName": "Warranty Guarantor Parts",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyDurationParts",
+      "displayName": "Warrant Duration Parts",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyGuarantorLabor",
+      "displayName": "Warranty Guarantor Labor",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyDurationLabor",
+      "displayName": "Warranty Duration Labor",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyDurationUnit",
+      "displayName": "Warranty Duration Unit",
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "ExtIdentifier",
+      "writable": true,
+      "description": "Revit GUID",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ReplacementCost",
+      "displayName": "Replacement Cost",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "ExpectedLife",
+      "displayName": "Expected Life",
+      "writable": true,
+      "schema": "double"
+    }
+  ]
+}

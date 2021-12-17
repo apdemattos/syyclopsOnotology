@@ -1,0 +1,66 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:syyclops:AnalogInput;1",
+    "@type": "Interface",
+    "displayName": "Analog Input",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "isSensorOf",
+            "displayName": "is sensor of",
+            "target": "dtmi:com:syyclops:Component;1"
+        },
+        {
+            "@type": "Property",
+            "name": "Name",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "lastValue",
+            "writable": true,
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "unit",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "validValues",
+            "displayName": {
+                "en": "Valid Values"
+            },
+            "writable": true,
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "minimum",
+                        "displayName": {
+                            "en": "Minimum"
+                        },
+                        "schema": "double"
+                    },
+                    {
+                        "name": "maximum",
+                        "displayName": {
+                            "en": "Maximum"
+                        },
+                        "schema": "double"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "Description",
+            "displayName": "Description",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

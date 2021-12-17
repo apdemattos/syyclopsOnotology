@@ -1,0 +1,33 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Document;1",
+  "@type": "Interface",
+  "displayName": "Document",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isDocumentOf",
+      "displayName": "is document of"
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "url",
+      "writable": true,
+      "schema": "string",
+      "description": "Url of document in blob storage"
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "writable": true,
+      "schema": "string"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Floor;1",
+  "@type": "Interface",
+  "displayName": "Floor",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "displayName": "is part of",
+      "target": "dtmi:com:syyclops:Facility;1"
+    },
+    {
+      "@type": "Property",
+      "name": "name",
+      "writable": true,
+      "displayName": "Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "category",
+      "writable": true,
+      "displayName": "Category",
+      "description": "Uniformat Categorization",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ExtIdentifier",
+      "writable": true,
+      "description": "Revit GUID",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "writable": true,
+      "displayName": "Description",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "elevation",
+      "displayName": "Elevation (Sea Level)",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "height",
+      "displayName": "Height",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "coordinates",
+      "displayName": {
+        "en": "Coordinates"
+      },
+      "writable": true,
+      "schema": {
+        "@id": "dtmi:com:syyclops:FloorCoordinates;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "latitude",
+            "displayName": {
+              "en": "Latitude"
+            },
+            "schema": "double"
+          },
+          {
+            "name": "longitude",
+            "displayName": {
+              "en": "Longitude"
+            },
+            "schema": "double"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "areaMeasurement",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Area Measurement"
+    }
+  ]
+}

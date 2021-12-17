@@ -1,0 +1,39 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:syyclops:DialogInput;1",
+    "@type": "Interface",
+    "displayName": "Dialog Input",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "isSensorOf",
+            "displayName": "is sensor of",
+            "target": "dtmi:com:syyclops:Component;1"
+        },
+        {
+            "@type": "Property",
+            "name": "Name",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "lastValue",
+            "writable": true,
+            "schema": "boolean"
+        },
+        {
+            "@type": "Property",
+            "name": "unit",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "Description",
+            "displayName": "Description",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

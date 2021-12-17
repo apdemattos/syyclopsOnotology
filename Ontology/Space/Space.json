@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Space;1",
+  "@type": "Interface",
+  "displayName": "Space",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "displayName": "is part of",
+      "target": "dtmi:com:syyclops:Floor;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isIn",
+      "displayName": "is in",
+      "target": "dtmi:com:syyclops:Floor;1"
+    },
+    {
+      "@type": "Property",
+      "name": "name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ExtIdentifier",
+      "writable": true,
+      "description": "Revit GUID",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "roomTag",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "humidity",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "CO2",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "grossArea",
+      "schema": "double",
+      "writable": true,
+      "displayName": "Gross Area"
+    },
+    {
+      "@type": "Property",
+      "name": "netArea",
+      "schema": "double",
+      "displayName": "Net Area",
+      "writable": true
+    }
+  ]
+}

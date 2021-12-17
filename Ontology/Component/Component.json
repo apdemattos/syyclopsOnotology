@@ -1,0 +1,108 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:syyclops:Component;1",
+  "@type": "Interface",
+  "displayName": "Component",
+  "contents": [
+    {
+      "@type": "Relationship",
+      "name": "isOfType",
+      "displayName": "is of type",
+      "target": "dtmi:com:syyclops:Type;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isLocatedIn",
+      "displayName": "is located in",
+      "target": "dtmi:com:syyclops:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isIn",
+      "displayName": "is in",
+      "target": "dtmi:com:syyclops:Zone;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "serves",
+      "displayName": "serves",
+      "target": "dtmi:com:syyclops:Space;1"
+    },
+    {
+      "@type": "Relationship",
+      "name": "isPartOf",
+      "displayName": "is part of",
+      "target": "dtmi:com:syyclops:System;1"
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "displayName": "Name",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Description",
+      "displayName": "Description",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ExtIdentifier",
+      "writable": true,
+      "description": "Revit GUID",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "SerialNumber",
+      "displayName": "Serial Number",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "InstallationDate",
+      "displayName": "Installation Date",
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "ExpectedEndOfLife",
+      "displayName": "Expected End of Life",
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "WarrantyStartDate",
+      "displayName": "Warranty Start Date",
+      "writable": true,
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "TagNumber",
+      "displayName": "Tag Number",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "BarCode",
+      "displayName": "Bar Code",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "AssetIdentifier",
+      "displayName": "Asset Identifier",
+      "writable": true,
+      "schema": "string"
+    }
+  ]
+}
