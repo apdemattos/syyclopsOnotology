@@ -32,7 +32,7 @@ COBie created a standarized template to organize this information during the con
 
 ## Sensors
 
-#### The Five Types of Sensors are: 
+*Input Signals are reading data, Output Signals are commands or controls*
 
 **Digital Input** - binary inputs (0 or 1), used to check the status of any device whether it is ON or OFF
 
@@ -44,4 +44,3 @@ COBie created a standarized template to organize this information during the con
 
 **Virtual Point** - A programmed point that sits in software such as a Set Point
 
-- Input Signals are reading data, Output Signals are commands or controls
