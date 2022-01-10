@@ -103,6 +103,12 @@
       "displayName": "Asset Identifier",
       "writable": true,
       "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "SkySparkId",
+      "writable": true,
+      "schema": "string"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:com:syyclops:DialogInput;1",
+    "@id": "dtmi:com:syyclops:VirtualPoint;1",
     "@type": "Interface",
-    "displayName": "Dialog Input",
+    "displayName": "Analog Input",
     "contents": [
         {
             "@type": "Relationship",
@@ -20,7 +20,13 @@
             "@type": "Property",
             "name": "lastValue",
             "writable": true,
-            "schema": "boolean"
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "unit",
+            "writable": true,
+            "schema": "string"
         },
         {
             "@type": "Property",

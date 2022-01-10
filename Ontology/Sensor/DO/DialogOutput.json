@@ -1,6 +1,6 @@
 {
     "@context": "dtmi:dtdl:context;2",
-    "@id": "dtmi:com:syyclops:DialogInput;1",
+    "@id": "dtmi:com:syyclops:DialogOutput;1",
     "@type": "Interface",
     "displayName": "Dialog Input",
     "contents": [
