@@ -12,19 +12,21 @@ COBie created a standarized template to organize this information during the con
 
 ## Ontology Overview 
 
+**Facility** - The Buildings themselves
+
+**Floor** -  Part of the building structure and a way to group spaces
+
+**Space** - Spaces are normally rooms of a building. However there may be exceptions such as parking lots, roofs, etc. Also larger rooms may be divided into spaces when it makes sense. Spaces are important for locating equipment, all equipment should be tagged with spaces where you access them for operation or maintenance. 
+
 **Component** - The central most important piece. The owners need to keep track of what equipment they have, who made it and delivered it, when it needs maintenance, how to inspect it and track history of service requests and works orders. 
 
 **Type** - Most components are defined by their type. When you install many instances of a common product the common information goes here.
 
-**Space** - Spaces are normally rooms of a building. However there may be exceptions such as parking lots, roofs, etc. Also larger rooms may be divided into spaces when it makes sense. Spaces are important for locating equipment, all equipment should be tagged with spaces where you access them for operation or maintenance. 
+**Sub Component** - Sub components are piecing of equipment that help to make up a component. For example air handling units might have Air Filters, motors, etc. as sub components
 
 **Zone** - Grouping of spaces that can be flexible. Zones can be used to divide facilites into ventilzation cones, access zones, etc. 
 
 **System** - Grouping of equipment such as AHU system or condensor water system
-
-**Facility** - The Buildings themselves
-
-**Floor** -  Part of the building structure and a way to group spaces
 
 **Document** - Documentation about the delivered equipment, usually tagged to a Type. Can provide maintenance intructions. Some Documents may also be tagged to systems or facilities 
 
@@ -38,6 +40,8 @@ COBie created a standarized template to organize this information during the con
 
 *Attribute Types:*
 - Schedule
+
+**Work Order** - A task or job that is scheduled or assigned for someone to complete. Work Orders are related to Components, Spaces, and Sub Components. Work Orders will have a status of open, closed, or in progress. This information will be coming from a clients CMMS or created by the customer in the Syyclops platform. 
 
 ## Sensors
 
