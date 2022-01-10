@@ -2,7 +2,7 @@
 ## Syyclops Buildings Ontology
 Based upon the COBie (Construction Operations Building Information Exchange) Standard
 
-![](<SyyclopsOntology.png>)
+![](<Syyclops Ontology.png>)
 
 ## COBie Background
 
