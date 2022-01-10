@@ -28,7 +28,16 @@ COBie created a standarized template to organize this information during the con
 
 **Document** - Documentation about the delivered equipment, usually tagged to a Type. Can provide maintenance intructions. Some Documents may also be tagged to systems or facilities 
 
+*Document Types:*
+- Cut Sheets/Specs
+- Videos 
+- Preventative Maintenance 
+- O&M Manuals
+
 **Attribute** - Can be used to tag custom data, similar to properties in the IFC data model
+
+*Attribute Types:*
+- Schedule
 
 ## Sensors
 
